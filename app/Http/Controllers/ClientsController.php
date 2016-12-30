@@ -42,7 +42,7 @@ class ClientsController extends Controller
     public function store (AdminClientRequest $request)
     {
         $data = $request->all();
-        $this->repository->create($data);
+        $this->clientService->create($data);
 
         return redirect()->route('admin.clients.index');
 

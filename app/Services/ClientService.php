@@ -32,12 +32,32 @@ class ClientService
     }
 
     public  function update(array  $data, $id)
+{
+    $this->clientRepository->update($data, $id);
+    $userId=$this->clientRepository->find($id,['user_id'])->user_id;
+
+
+    $this->userRepository->update($data['user'],$userId);
+}
+
+    public  function create(array  $data)
     {
-        $this->clientRepository->update($data, $id);
-        $userId=$this->clientRepository->find($id,['user_id'])->user_id;
+
+        $data['user']['password']=bcrypt(123456);
+
+        $user=$this->userRepository->create($data['user']);
 
 
-        $this->userRepository->update($data['user'],$userId);
+        $data['user_id']= $user->Id;
+        dd($data['user_id']);
+
+        $this->clientRepository->create($data);
+
+
     }
 
 }
+
+
+
+

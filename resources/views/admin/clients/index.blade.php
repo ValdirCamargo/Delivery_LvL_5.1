@@ -15,6 +15,7 @@
                 <th>ID</th>
                 <th>Cliente</th>
                 <th>Email</th>
+                <th>Tipo</th>
                 <th>Telefone</th>
                 <th>Endereco</th>
                 <th>Cidade</th>
@@ -31,6 +32,7 @@
                     <td>{{$client->id}}</td>
                     <td>{{$client->user->name}}</td>
                     <td>{{$client->user->email}}</td>
+                    <td>{{$client->user->role}}</td>
                     <td>{{$client->phone}}</td>
                     <td>{{$client->address}}</td>
                     <td>{{$client->city}}</td>
