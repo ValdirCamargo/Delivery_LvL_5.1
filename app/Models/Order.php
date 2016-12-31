@@ -11,15 +11,20 @@ class Order extends Model implements Transformable
     use TransformableTrait;
 
     protected $fillable = [
-        'client_id',
-        'user_deliveryman_id',
+        'client_id', 'user_deliveryman_id',
         'total',
         'status',
+        'cupom_id'
     ];
 
     public function client()
     {
         return $this->belongsTo(Client::class);
+    }
+
+    public function cupom()
+    {
+        return $this->belongsTo(Cupom::class);
     }
 
     public function items()
