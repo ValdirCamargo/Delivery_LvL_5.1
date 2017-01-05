@@ -80,8 +80,10 @@ Route::group(['prefix'=>'admin','middleware'=>'auth.checkrole:admin','as'=>'admi
         Route::post('order/store',['as'=>'order.store', 'uses'=>'CheckoutController@store']);
     });
 
+    Route::group(['middleware'=>'cors'],function (){
+
         Route::post('oauth/access_token', function() {return Response::json(Authorizer::issueAccessToken());
-});
+        });
 
 
         Route::group(['prefix' => 'api', 'middleware' => 'oauth', 'as' => 'api.'], function () {
@@ -90,9 +92,9 @@ Route::group(['prefix'=>'admin','middleware'=>'auth.checkrole:admin','as'=>'admi
                 Route::resource('order',
                     'Api\Client\ClientCheckoutController',[
                         'except'=>['create','edit','destroy']
-                ]);
+                    ]);
 
-                });
+            });
 
 
             Route::group(['prefix'=>'deliveryman','middleware'=>'oauth.checkrole:deliveryman','as'=>'deliveryman.'], function () {
@@ -107,3 +109,6 @@ Route::group(['prefix'=>'admin','middleware'=>'auth.checkrole:admin','as'=>'admi
             });
 
         });
+
+    });
+
