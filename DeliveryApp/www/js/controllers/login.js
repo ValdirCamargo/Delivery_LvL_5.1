@@ -1,4 +1,4 @@
-angular.module('starter.controllers',[])
+angular.module('starter.controllers')
     .controller('LoginCtrl',['$scope','OAuth','$ionicPopup','$state' ,function ($scope,OAuth,$ionicPopup,$state) {
       $scope.user = {
           username:'',
@@ -8,7 +8,7 @@ angular.module('starter.controllers',[])
        $scope.login = function () {
            OAuth.getAccessToken($scope.user)
                .then(function (data){
-                    $state.go('home');
+                    $state.go('client.view_products');
                },function (responseError){
                     $ionicPopup.alert({
                         title: 'Advertencia',

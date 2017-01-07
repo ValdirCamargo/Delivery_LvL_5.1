@@ -93,7 +93,7 @@ Route::group(['prefix'=>'admin','middleware'=>'auth.checkrole:admin','as'=>'admi
                     'Api\Client\ClientCheckoutController',[
                         'except'=>['create','edit','destroy']
                     ]);
-
+                Route::get('products','Api\Client\ClientProductController@index');
             });
 
 

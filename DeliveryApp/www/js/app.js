@@ -3,19 +3,17 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-angular.module('starter', ['ionic','starter.controllers','angular-oauth2'
-])
-    .service('meuService',function () {
-        this.largura = 40;
-        this.comprimento = 40;
-        this.minhaFuncao = function () {
-            console.log(this.largura*this.comprimento);
-        }
-    })
+angular.module('starter.controllers',[]);
+angular.module('starter.services',[]);
 
-    .run(function($ionicPlatform,meuService) {
-        meuService.minhaFuncao();
-        $ionicPlatform.ready(function() {
+angular.module('starter',[
+    'ionic','starter.controllers','starter.services','angular-oauth2','ngResource'
+])
+    .constant('appConfig',{
+        baseUrl: 'http://localhost:8000'
+    })
+    .run(function($ionicPlatform) {
+      $ionicPlatform.ready(function() {
         if(window.cordova && window.cordova.plugins.Keyboard) {
           // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
           // for form inputs)
@@ -31,10 +29,10 @@ angular.module('starter', ['ionic','starter.controllers','angular-oauth2'
         }
       });
     })
-       .config(function ($stateProvider, $urlRouterProvider,OAuthProvider,OAuthTokenProvider)
+       .config(function ($stateProvider, $urlRouterProvider,OAuthProvider,OAuthTokenProvider,appConfig)
        {
            OAuthProvider.configure({
-               baseUrl: 'http://localhost:8000',
+               baseUrl: appConfig.baseUrl,
                clientId: 'appid01',
                clientSecret: 'secret' ,// optional
                grantPath: '/oauth/access_token'
@@ -59,6 +57,34 @@ angular.module('starter', ['ionic','starter.controllers','angular-oauth2'
                   controller: function ($scope) {
 
                   }
-               });
-           //$urlRouterProvider.otherwise('/');
+               })
+               .state('client',{
+                   abstract: true,
+                   url: '/client',
+                   template:'<ion-nav-view>'
+               })
+               .state('client.checkout',{
+                   cache : false ,
+                   url:'/checkout',
+                   templateUrl:'templates/client/checkout.html',
+                   controller: 'ClientCheckoutCtrl'
+               })
+               .state('client.checkout_item_detail',{
+                   url:'/checkout/detail/:index',
+                   templateUrl:'templates/client/checkout_item_detail.html',
+                   controller: 'ClientCheckoutDetailCtrl'
+               })
+               .state('client.checkout_successful',{
+                   url:'/checkout/successful',
+                   templateUrl: 'templates/client/checkout_successful.html',
+                   controller: 'ClientCheckoutSuccessful'
+               })
+
+               .state('client.view_products',{
+                   url:'/view_products',
+                   templateUrl:'templates/client/view_products.html',
+                   controller: 'ClientViewProductsCtrl'
+               })
+
+           $urlRouterProvider.otherwise('/login');
    });
