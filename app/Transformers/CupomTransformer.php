@@ -11,7 +11,6 @@ use CodeDelivery\Models\Cupom;
  */
 class CupomTransformer extends TransformerAbstract
 {
-
     /**
      * Transform the \Cupom entity
      * @param \Cupom $model
@@ -21,13 +20,11 @@ class CupomTransformer extends TransformerAbstract
     public function transform(Cupom $model)
     {
         return [
-            'id'         => (int) $model->id,
-            'valor'=>$model->value,
-            'Codigo'=>$model->code,
-            /* place your other model properties here */
-
+            'id'           => (int)$model->id,
+            'code'         => $model->code,
+            'value'        => (float) $model->value,
             'created_at' => $model->created_at,
-            'updated_at' => $model->updated_at
+            'updated_at' => $model->updated_at,
         ];
     }
 }

@@ -1,9 +1,9 @@
 angular.module('starter.controllers')
     .controller('ClientCheckoutCtrl',
-        ['$scope','$state','$cart','Order','$ionicLoading','$ionicPopup' ,
-            function ($scope,$state,$cart,Order,$ionicLoading,$ionicPopup) {
-
+        ['$scope','$state','$cart','Order','$ionicLoading','$ionicPopup','Cupom',
+            function ($scope,$state,$cart,Order,$ionicLoading,$ionicPopup,Cupom) {
             var cart = $cart.get();
+            $scope.cupom = cart.cupom;
             $scope.items = cart.items;
             $scope.total = cart.total;
             //$scope.showDelete= true;
@@ -39,5 +39,32 @@ angular.module('starter.controllers')
                     })
                });
 
+            };
+
+            $scope.readBarCode = function () {
+                getValueCupon(2470);
+            };
+
+            $scope.removeCupom = function () {
+                $cart.removeCupom();
+                $scope.cupom = $cart.get().cupom;
+                $scope.total = $cart.getTotalFinal();
+            };
+            function getValueCupon(code) {
+                $ionicLoading.show({
+                    template : 'Carregando...'
+                });
+                Cupom.get({code: code},function (data) {
+                    $cart.setCupom(data.data.code,data.data.value);
+                    $scope.cupom = $cart.get().cupom;
+                    $scope.total = $cart.getTotalFinal()
+                    $ionicLoading.hide();
+                },function (responseError) {
+                    $ionicLoading.hide();
+                    $ionicPopup.alert({
+                        title: 'Advertencia',
+                        template: 'Cupom Invalido'
+                    })
+                });
             };
     }]);

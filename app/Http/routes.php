@@ -80,6 +80,8 @@ Route::group(['prefix'=>'admin','middleware'=>'auth.checkrole:admin','as'=>'admi
         Route::post('order/store',['as'=>'order.store', 'uses'=>'CheckoutController@store']);
     });
 
+    //Rotas das Apis//
+
     Route::group(['middleware'=>'cors'],function (){
 
         Route::post('oauth/access_token', function() {return Response::json(Authorizer::issueAccessToken());
@@ -107,6 +109,8 @@ Route::group(['prefix'=>'admin','middleware'=>'auth.checkrole:admin','as'=>'admi
                     'Api\Deliveryman\DeliverymanCheckoutController@updateStatus',
                     'as'=>'orders.update_status']);
             });
+
+            Route::get('cupom/{code}','Api\CupomController@show');
 
         });
 
