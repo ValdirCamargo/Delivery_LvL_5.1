@@ -20,9 +20,9 @@
             </div>
             <label class="item item-input">
                 <span class="input-label">Quantidade: </span>
-                <input type="text" placeholder="Forneca a quantidade" ng-model="product.qtd"/>
+                <input type="number" class="form-control" min="1" max="15" placeholder="Forneca a quantidade" ng-model="product.qtd" required/>
             </label>
-            <button type="button" class="button button-assertive button-full" ng-click="updateQtd()">Alterar quantidade</button>
+            <button type="button" class="button button-assertive button-full"  ng-click="updateQtd()">Alterar quantidade</button>
 
         </div>
     </ion-content>

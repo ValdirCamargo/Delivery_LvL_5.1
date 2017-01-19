@@ -6,7 +6,8 @@
   },
   "dependencies": {
     "angular-oauth2": "^4.1.0",
-    "angular-resource": "^1.6.1"
+    "angular-resource": "1.4.1",
+    "ngCordova": "^0.1.27-alpha"
   },
   "resolutions": {
     "angular-oauth2": "^4.1.0",

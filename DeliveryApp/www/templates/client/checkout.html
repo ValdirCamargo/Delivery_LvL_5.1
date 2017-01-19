@@ -4,14 +4,14 @@
         <button class="button button-icon ion-plus" ng-click="openListProducts()"></button>
          <h2 class="title ">Total: R$ {{total}},00</h2>
         <button class="button button-icon ion-minus-circled" ng-click="showDelete= !showDelete"
-        ng-class="{'button-assertive': showDelete, '': !showDelete}">
+       >
 
         </button>
     </div>
     <ion-content class="padding has-subheader">
         <ion-list show-delete="showDelete">
-            <ion-item class="item-balanced item-icon-left" ng-show="cupom.value !=null">
-                <span class="icon ion-close" ng-click="removeCupom"></span>
+            <ion-item class="item-balanced item-icon-left" ng-show="cupom.value != null">
+                <span class="icon ion-close" ng-click="removeCupom()"></span>
                 <strong>Cupom:</strong>
                 <span class="badge badge-balanced">- R$ {{cupom.value}}</span>
             </ion-item>
@@ -53,7 +53,4 @@
 
         </ion-content>
 
-    <div class="bar bar-footer bar-positive">
-        <a class="button icon-left ion-chevron-left button-clear swiper-button-white" href="#/client/view_products">Back</a>
-    </div>
 </ion-view>

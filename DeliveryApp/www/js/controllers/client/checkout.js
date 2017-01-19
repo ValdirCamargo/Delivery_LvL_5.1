@@ -1,16 +1,16 @@
 angular.module('starter.controllers')
     .controller('ClientCheckoutCtrl',
-        ['$scope','$state','$cart','Order','$ionicLoading','$ionicPopup','Cupom',
-            function ($scope,$state,$cart,Order,$ionicLoading,$ionicPopup,Cupom) {
+        ['$scope','$state','$cart','Order','$ionicLoading','$ionicPopup','Cupom','$cordovaBarcodeScanner','User',
+            function ($scope,$state,$cart,Order,$ionicLoading,$ionicPopup,Cupom,$cordovaBarcodeScanner,User) {
             var cart = $cart.get();
             $scope.cupom = cart.cupom;
             $scope.items = cart.items;
-            $scope.total = cart.total;
+            $scope.total = $cart.getTotalFinal();
             //$scope.showDelete= true;
             $scope.removeItem = function (i) {
                 $cart.removeItem(i);
                 $scope.items.splice(i,1);
-                $scope.total = $cart.get().total;
+                $scope.total = $cart.getTotalFinal();
             };
             $scope.openListProducts = function () {
                 $state.go('client.view_products')
@@ -21,14 +21,27 @@ angular.module('starter.controllers')
             }
 
             $scope.save = function () {
-               var items = angular.copy($scope.items);
-               angular.forEach(items, function (item) {
+               var o = {items: angular.copy($scope.items)};
+
+                if($scope.cupom.value){
+                    if($scope.cupom.value > $scope.total){
+                        $ionicPopup.alert({
+                            title: "Erro",
+                            template: 'O valor do cupom é maior que o valor do pedido! Adicione mais itens no pedido ou remova o cupom.'
+                        });
+                        return;
+                    }
+                    o.cupom_code = $scope.cupom.code;
+                }
+
+               angular.forEach(o.items, function (item) {
                    item.product_id = item.id;
                });
                $ionicLoading.show({
                    template : 'Salvando pedido...'
-               })
-               Order.save({id: null},{items: items}, function (data) {
+               });
+
+               Order.save({id: null},o, function (data) {
                     $ionicLoading.hide();
                     $state.go('client.checkout_successful');
                }, function (responseError) {
@@ -42,7 +55,17 @@ angular.module('starter.controllers')
             };
 
             $scope.readBarCode = function () {
-                getValueCupon(2470);
+                $cordovaBarcodeScanner
+                    .scan()
+                    .then(function(barcodeData) {
+                        getValueCupon(barcodeData.text);
+                    }, function(error) {
+                        $ionicPopup.alert({
+                            title: 'Ocorreu um erro',
+                            template: 'Falha ao ler QrCode - Tente novamente'
+                        })
+                    });
+
             };
 
             $scope.removeCupom = function () {
