@@ -1,1 +1,11 @@
 /* Empty. Add your own CSS if you like */
+.logoF {
+    display:block;
+    margin:auto;
+
+    background: url(../img/1.png) transparent no-repeat;
+    background-size: cover !important;
+    width: 200px;
+    height: 199px;
+    border: 0;
+}

@@ -2,54 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee7a3fe5-6593-400c-b407-dc93f97f35f0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DeliveryApp/www/js/controllers/client/menu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DeliveryApp/www/js/controllers/client/order.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DeliveryApp/www/js/controllers/client/viewOrder.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DeliveryApp/www/js/controllers/deliveryman/menu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DeliveryApp/www/js/controllers/deliveryman/order.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DeliveryApp/www/js/controllers/deliveryman/viewOrder.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DeliveryApp/www/js/filters/join.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DeliveryApp/www/js/services/user.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DeliveryApp/www/templates/client/menu.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DeliveryApp/www/templates/client/order.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DeliveryApp/www/templates/client/view_order.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DeliveryApp/www/templates/deliveryman/menu.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DeliveryApp/www/templates/deliveryman/order.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DeliveryApp/www/templates/deliveryman/view_order.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Presenters/UserPresenter.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Transformers/UserTransformer.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DeliveryApp/www/lib/angular-resource/LICENSE.md" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeliveryApp/www/lib/angular/angular.min.js.gzip" afterPath="$PROJECT_DIR$/DeliveryApp/www/lib/angular/angular.min.js.gzip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DeliveryApp/www/js/services/userData.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Events/GetLocationDeliveryman.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Models/Geo.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/migrations/2017_01_26_234749_add_hash_to_orders.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Delivery_LvL_5.1.iml" afterPath="$PROJECT_DIR$/.idea/Delivery_LvL_5.1.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeliveryApp/bower.json" afterPath="$PROJECT_DIR$/DeliveryApp/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeliveryApp/config.xml" afterPath="$PROJECT_DIR$/DeliveryApp/config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeliveryApp/www/css/style.css" afterPath="$PROJECT_DIR$/DeliveryApp/www/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeliveryApp/www/index.html" afterPath="$PROJECT_DIR$/DeliveryApp/www/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeliveryApp/www/js/app.js" afterPath="$PROJECT_DIR$/DeliveryApp/www/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeliveryApp/www/js/controllers/client/checkout.js" afterPath="$PROJECT_DIR$/DeliveryApp/www/js/controllers/client/checkout.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeliveryApp/www/js/controllers/client/checkoutSuccessful.js" afterPath="$PROJECT_DIR$/DeliveryApp/www/js/controllers/client/checkoutSuccessful.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeliveryApp/www/js/controllers/client/menu.js" afterPath="$PROJECT_DIR$/DeliveryApp/www/js/controllers/client/menu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeliveryApp/www/js/controllers/client/order.js" afterPath="$PROJECT_DIR$/DeliveryApp/www/js/controllers/client/order.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeliveryApp/www/js/controllers/client/viewOrder.js" afterPath="$PROJECT_DIR$/DeliveryApp/www/js/controllers/client/viewOrder.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeliveryApp/www/js/controllers/deliveryman/menu.js" afterPath="$PROJECT_DIR$/DeliveryApp/www/js/controllers/deliveryman/menu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeliveryApp/www/js/controllers/deliveryman/order.js" afterPath="$PROJECT_DIR$/DeliveryApp/www/js/controllers/deliveryman/order.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeliveryApp/www/js/controllers/deliveryman/viewOrder.js" afterPath="$PROJECT_DIR$/DeliveryApp/www/js/controllers/deliveryman/viewOrder.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeliveryApp/www/js/controllers/login.js" afterPath="$PROJECT_DIR$/DeliveryApp/www/js/controllers/login.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeliveryApp/www/lib/angular-resource/.bower.json" afterPath="$PROJECT_DIR$/DeliveryApp/www/lib/angular-resource/.bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeliveryApp/www/lib/angular-resource/angular-resource.js" afterPath="$PROJECT_DIR$/DeliveryApp/www/lib/angular-resource/angular-resource.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeliveryApp/www/lib/angular-resource/angular-resource.min.js" afterPath="$PROJECT_DIR$/DeliveryApp/www/lib/angular-resource/angular-resource.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeliveryApp/www/lib/angular-resource/angular-resource.min.js.map" afterPath="$PROJECT_DIR$/DeliveryApp/www/lib/angular-resource/angular-resource.min.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeliveryApp/www/lib/angular-resource/bower.json" afterPath="$PROJECT_DIR$/DeliveryApp/www/lib/angular-resource/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeliveryApp/www/lib/angular-resource/package.json" afterPath="$PROJECT_DIR$/DeliveryApp/www/lib/angular-resource/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeliveryApp/www/lib/angular/.bower.json" afterPath="$PROJECT_DIR$/DeliveryApp/www/lib/angular/.bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeliveryApp/www/lib/angular/angular.js" afterPath="$PROJECT_DIR$/DeliveryApp/www/lib/angular/angular.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeliveryApp/www/lib/angular/angular.min.js" afterPath="$PROJECT_DIR$/DeliveryApp/www/lib/angular/angular.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeliveryApp/www/lib/angular/angular.min.js.map" afterPath="$PROJECT_DIR$/DeliveryApp/www/lib/angular/angular.min.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeliveryApp/www/lib/angular/bower.json" afterPath="$PROJECT_DIR$/DeliveryApp/www/lib/angular/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeliveryApp/www/lib/angular/package.json" afterPath="$PROJECT_DIR$/DeliveryApp/www/lib/angular/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeliveryApp/www/js/services/order.js" afterPath="$PROJECT_DIR$/DeliveryApp/www/js/services/order.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeliveryApp/www/templates/client/checkout.html" afterPath="$PROJECT_DIR$/DeliveryApp/www/templates/client/checkout.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeliveryApp/www/templates/client/checkout_item_detail.html" afterPath="$PROJECT_DIR$/DeliveryApp/www/templates/client/checkout_item_detail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeliveryApp/www/templates/client/checkout_successful.html" afterPath="$PROJECT_DIR$/DeliveryApp/www/templates/client/checkout_successful.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeliveryApp/www/templates/client/order.html" afterPath="$PROJECT_DIR$/DeliveryApp/www/templates/client/order.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeliveryApp/www/templates/client/view_products.html" afterPath="$PROJECT_DIR$/DeliveryApp/www/templates/client/view_products.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeliveryApp/www/templates/deliveryman/menu.html" afterPath="$PROJECT_DIR$/DeliveryApp/www/templates/deliveryman/menu.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeliveryApp/www/templates/deliveryman/order.html" afterPath="$PROJECT_DIR$/DeliveryApp/www/templates/deliveryman/order.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeliveryApp/www/templates/login.html" afterPath="$PROJECT_DIR$/DeliveryApp/www/templates/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/Deliveryman/DeliverymanCheckoutController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/Deliveryman/DeliverymanCheckoutController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Repositories/UserRepositoryEloquent.php" afterPath="$PROJECT_DIR$/app/Repositories/UserRepositoryEloquent.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Transformers/ClientTransformer.php" afterPath="$PROJECT_DIR$/app/Transformers/ClientTransformer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Transformers/OrderItemTransformer.php" afterPath="$PROJECT_DIR$/app/Transformers/OrderItemTransformer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Transformers/OrderTransformer.php" afterPath="$PROJECT_DIR$/app/Transformers/OrderTransformer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Repositories/OrderRepositoryEloquent.php" afterPath="$PROJECT_DIR$/app/Repositories/OrderRepositoryEloquent.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Services/OrderService.php" afterPath="$PROJECT_DIR$/app/Services/OrderService.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Transformers/UserTransformer.php" afterPath="$PROJECT_DIR$/app/Transformers/UserTransformer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/UserTableSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/UserTableSeeder.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -2854,91 +2840,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DeliveryApp/www/js/app.js">
+      <file leaf-file-name="DeliverymanCheckoutController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/Deliveryman/DeliverymanCheckoutController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1972">
-              <caret line="116" column="56" lean-forward="false" selection-start-line="116" selection-start-column="32" selection-end-line="116" selection-end-column="56" />
-              <folding />
+            <state relative-caret-position="426">
+              <caret line="78" column="55" lean-forward="false" selection-start-line="78" selection-start-column="55" selection-end-line="78" selection-end-column="55" />
+              <folding>
+                <element signature="e#65#112#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="order.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DeliveryApp/www/templates/deliveryman/order.html">
+      <file leaf-file-name="GetLocationDeliveryman.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Events/GetLocationDeliveryman.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="319">
+              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <folding>
+                <element signature="e#39#69#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.env">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="459">
-              <caret line="27" column="11" lean-forward="false" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view_order.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DeliveryApp/www/templates/deliveryman/view_order.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="37" lean-forward="false" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menu.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DeliveryApp/www/templates/deliveryman/menu.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="46" column="17" lean-forward="false" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menu.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DeliveryApp/www/js/controllers/deliveryman/menu.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="28" lean-forward="false" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DeliveryApp/www/js/controllers/login.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cart.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DeliveryApp/platforms/android/build/intermediates/assets/debug/www/js/services/cart.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="45" column="8" lean-forward="false" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DeliveryApp/www/templates/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="62" lean-forward="false" selection-start-line="6" selection-start-column="62" selection-end-line="6" selection-end-column="62" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="order.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DeliveryApp/www/js/controllers/deliveryman/order.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="29" lean-forward="false" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+              <caret line="27" column="20" lean-forward="false" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -2956,6 +2886,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>OAuthToken</find>
+      <find>Orde</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -2964,57 +2895,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/DeliveryApp/www/templates/client/view-product.html" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/Client/ClientProductController.php" />
-        <option value="$PROJECT_DIR$/app/Transformers/ProductTransformer.php" />
-        <option value="$PROJECT_DIR$/app/Repositories/ProductRepositoryEloquent.php" />
-        <option value="$PROJECT_DIR$/DeliveryApp/www/js/services/product.js" />
-        <option value="$PROJECT_DIR$/DeliveryApp/www/js/services/localStorage.js" />
-        <option value="$PROJECT_DIR$/DeliveryApp/www/js/controllers/client/viewProduct.js" />
-        <option value="$PROJECT_DIR$/DeliveryApp/www/templates/client/view_products.html" />
-        <option value="$PROJECT_DIR$/DeliveryApp/www/js/controllers/client/checkoutDetail.js" />
-        <option value="$PROJECT_DIR$/DeliveryApp/www/js/services/order.js" />
-        <option value="$PROJECT_DIR$/app/Repositories/CupomRepository.php" />
-        <option value="$PROJECT_DIR$/app/Repositories/OrderItemRepositoryEloquent.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/CupomController.php" />
         <option value="$PROJECT_DIR$/app/Repositories/CupomRepositoryEloquent.php" />
         <option value="$PROJECT_DIR$/app/Transformers/CupomTransformer.php" />
         <option value="$PROJECT_DIR$/DeliveryApp/www/js/services/cupom.js" />
         <option value="$PROJECT_DIR$/DeliveryApp/www/js/services/cart.js" />
         <option value="$PROJECT_DIR$/DeliveryApp/bower.json" />
-        <option value="$PROJECT_DIR$/DeliveryApp/www/templates/client/checkout_successful.html" />
-        <option value="$PROJECT_DIR$/DeliveryApp/www/js/controllers/login.js" />
         <option value="$PROJECT_DIR$/DeliveryApp/config.xml" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php" />
         <option value="$PROJECT_DIR$/app/Transformers/ClientTransformer.php" />
         <option value="$PROJECT_DIR$/app/Presenters/UserPresenter.php" />
         <option value="$PROJECT_DIR$/app/Repositories/UserRepositoryEloquent.php" />
-        <option value="$PROJECT_DIR$/app/Transformers/UserTransformer.php" />
         <option value="$PROJECT_DIR$/DeliveryApp/www/js/services/user.js" />
         <option value="$PROJECT_DIR$/DeliveryApp/www/templates/menu.html" />
-        <option value="$PROJECT_DIR$/DeliveryApp/www/js/controllers/client/menu.js" />
-        <option value="$PROJECT_DIR$/DeliveryApp/www/templates/client/checkout.html" />
         <option value="$PROJECT_DIR$/DeliveryApp/www/templates/client/menu.html" />
         <option value="$PROJECT_DIR$/app/Transformers/OrderTransformer.php" />
         <option value="$PROJECT_DIR$/DeliveryApp/www/js/filters/join.js" />
         <option value="$PROJECT_DIR$/DeliveryApp/www/js/controllers/client/checkoutSuccessful.js" />
-        <option value="$PROJECT_DIR$/DeliveryApp/www/js/controllers/client/viewOrder.js" />
         <option value="$PROJECT_DIR$/DeliveryApp/www/templates/client/view_order.html" />
-        <option value="$PROJECT_DIR$/DeliveryApp/www/templates/client/order.html" />
-        <option value="$PROJECT_DIR$/DeliveryApp/www/js/controllers/client/order.js" />
         <option value="$PROJECT_DIR$/app/Transformers/OrderItemTransformer.php" />
-        <option value="$PROJECT_DIR$/DeliveryApp/www/js/controllers/client/checkout.js" />
+        <option value="$PROJECT_DIR$/DeliveryApp/www/templates/deliveryman/view_order.html" />
+        <option value="$PROJECT_DIR$/DeliveryApp/www/css/style.css" />
+        <option value="$PROJECT_DIR$/DeliveryApp/www/templates/login.html" />
+        <option value="$PROJECT_DIR$/DeliveryApp/www/templates/client/checkout.html" />
+        <option value="$PROJECT_DIR$/DeliveryApp/www/templates/client/checkout_item_detail.html" />
+        <option value="$PROJECT_DIR$/DeliveryApp/www/templates/client/checkout_successful.html" />
+        <option value="$PROJECT_DIR$/DeliveryApp/www/templates/client/order.html" />
+        <option value="$PROJECT_DIR$/DeliveryApp/www/templates/client/view_products.html" />
         <option value="$PROJECT_DIR$/DeliveryApp/www/js/app.js" />
         <option value="$PROJECT_DIR$/DeliveryApp/www/index.html" />
+        <option value="$PROJECT_DIR$/DeliveryApp/www/js/controllers/login.js" />
         <option value="$PROJECT_DIR$/DeliveryApp/www/js/controllers/deliveryman/menu.js" />
-        <option value="$PROJECT_DIR$/DeliveryApp/www/js/controllers/deliveryman/order.js" />
-        <option value="$PROJECT_DIR$/DeliveryApp/www/js/controllers/deliveryman/viewOrder.js" />
+        <option value="$PROJECT_DIR$/DeliveryApp/www/js/controllers/client/menu.js" />
+        <option value="$PROJECT_DIR$/DeliveryApp/www/js/services/userData.js" />
+        <option value="$PROJECT_DIR$/app/Transformers/UserTransformer.php" />
+        <option value="$PROJECT_DIR$/database/seeds/UserTableSeeder.php" />
+        <option value="$PROJECT_DIR$/DeliveryApp/www/js/controllers/client/checkout.js" />
+        <option value="$PROJECT_DIR$/DeliveryApp/www/js/controllers/client/order.js" />
+        <option value="$PROJECT_DIR$/DeliveryApp/www/js/controllers/client/viewOrder.js" />
+        <option value="$PROJECT_DIR$/DeliveryApp/www/js/services/order.js" />
         <option value="$PROJECT_DIR$/DeliveryApp/www/templates/deliveryman/menu.html" />
         <option value="$PROJECT_DIR$/DeliveryApp/www/templates/deliveryman/order.html" />
-        <option value="$PROJECT_DIR$/DeliveryApp/www/templates/deliveryman/view_order.html" />
-        <option value="$PROJECT_DIR$/DeliveryApp/www/templates/login.html" />
-        <option value="$PROJECT_DIR$/DeliveryApp/www/templates/client/checkout_item_detail.html" />
+        <option value="$PROJECT_DIR$/DeliveryApp/www/js/controllers/deliveryman/order.js" />
+        <option value="$PROJECT_DIR$/DeliveryApp/www/js/controllers/deliveryman/viewOrder.js" />
+        <option value="$PROJECT_DIR$/app/Models/Geo.php" />
+        <option value="$PROJECT_DIR$/app/Repositories/OrderRepositoryEloquent.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/app/Events/GetLocationDeliveryman.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2017_01_26_234749_add_hash_to_orders.php" />
+        <option value="$PROJECT_DIR$/app/Services/OrderService.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/Deliveryman/DeliverymanCheckoutController.php" />
+        <option value="$PROJECT_DIR$/vendor/pusher/pusher-php-server/lib/Pusher.php" />
       </list>
     </option>
   </component>
@@ -3105,6 +3036,7 @@
       <path value="$PROJECT_DIR$/vendor/league/fractal" />
       <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-cors" />
       <path value="$PROJECT_DIR$/vendor/asm89/stack-cors" />
+      <path value="$PROJECT_DIR$/vendor/pusher/pusher-php-server" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
@@ -3131,8 +3063,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -3158,24 +3088,6 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Transformers" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Delivery_LvL_5.1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Delivery_LvL_5.1" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -3191,7 +3103,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Presenters" />
+              <option name="myItemId" value="Http" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -3212,9 +3124,89 @@
               <option name="myItemId" value="Http" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Delivery_LvL_5.1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Delivery_LvL_5.1" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Api" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Delivery_LvL_5.1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Delivery_LvL_5.1" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Api" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Deliveryman" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Delivery_LvL_5.1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Delivery_LvL_5.1" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Events" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -3226,19 +3218,19 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
-    <property name="SearchEverywhereHistoryKey" value="rout&#9;FILE&#9;file://C:/Apache24/htdocs/Delivery_LvL_5.1/app/Http/routes.php&#10;angula-&#9;null&#9;null&#10;angul&#9;FILE&#9;file://C:/Apache24/htdocs/Delivery_LvL_5.1/DeliveryApp/platforms/android/build/intermediates/assets/debug/www/lib/angular-oauth2/src/angular-oauth2.js&#10;angula&#9;null&#9;null&#10;cupo&#9;null&#9;null&#10;rou&#9;FILE&#9;file://C:/Apache24/htdocs/Delivery_LvL_5.1/app/Http/routes.php" />
+    <property name="SearchEverywhereHistoryKey" value="pusher&#9;FILE&#9;file://C:/Apache24/htdocs/Delivery_LvL_5.1/vendor/pusher/pusher-php-server/lib/Pusher.php&#10;rout&#9;FILE&#9;file://C:/Apache24/htdocs/Delivery_LvL_5.1/app/Http/routes.php&#10;angula-&#9;null&#9;null&#10;angul&#9;FILE&#9;file://C:/Apache24/htdocs/Delivery_LvL_5.1/DeliveryApp/platforms/android/build/intermediates/assets/debug/www/lib/angular-oauth2/src/angular-oauth2.js&#10;angula&#9;null&#9;null&#10;cupo&#9;null&#9;null&#10;rou&#9;FILE&#9;file://C:/Apache24/htdocs/Delivery_LvL_5.1/app/Http/routes.php" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Apache24\htdocs\Delivery_LvL_5.1\DeliveryApp\www\js\services" />
+      <recent name="C:\Apache24\htdocs\Delivery_LvL_5.1\DeliveryApp\www\templates\client" />
+      <recent name="C:\Apache24\htdocs\Delivery_LvL_5.1\DeliveryApp\www\js\controllers\client" />
+      <recent name="C:\Apache24\htdocs\Delivery_LvL_5.1\app\Transformers" />
+      <recent name="C:\Apache24\htdocs\Delivery_LvL_5.1\app\Presenters" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Apache24\htdocs\Delivery_LvL_5.1\app\Services" />
       <recent name="C:\Apache24\htdocs\Delivery_LvL_5.1\app\Models" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Apache24\htdocs\Delivery_LvL_5.1\DeliveryApp\www\templates\client" />
-      <recent name="C:\Apache24\htdocs\Delivery_LvL_5.1\DeliveryApp\www\js\controllers\client" />
-      <recent name="C:\Apache24\htdocs\Delivery_LvL_5.1\DeliveryApp\www\js\services" />
-      <recent name="C:\Apache24\htdocs\Delivery_LvL_5.1\app\Transformers" />
-      <recent name="C:\Apache24\htdocs\Delivery_LvL_5.1\app\Presenters" />
     </key>
   </component>
   <component name="RunManager">
@@ -3330,12 +3322,14 @@
       <workItem from="1484594602440" duration="5725000" />
       <workItem from="1484665051532" duration="14885000" />
       <workItem from="1484740832623" duration="12257000" />
-      <workItem from="1484787652406" duration="1334000" />
+      <workItem from="1484787652406" duration="1344000" />
+      <workItem from="1484930194597" duration="17878000" />
+      <workItem from="1485451161210" duration="7155000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="255278000" />
+    <option name="totallyTimeSpent" value="280321000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -3347,18 +3341,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2246596" sideWeight="0.072013095" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19969743" sideWeight="0.07364976" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.12111293" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2246596" sideWeight="0.9279869" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19667171" sideWeight="0.92635024" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -3389,130 +3383,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Transformers/UserTransformer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="25" column="42" lean-forward="true" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
-          <folding>
-            <element signature="e#45#74#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DeliveryApp/www/js/services/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DeliveryApp/www/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DeliveryApp/www/templates/menu.html" />
-    <entry file="file://$PROJECT_DIR$/DeliveryApp/www/img/ionic.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DeliveryApp/www/service-worker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DeliveryApp/resources/icon.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DeliveryApp/resources/splash.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DeliveryApp/resources/android/icon/drawable-mdpi-icon.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DeliveryApp/resources/android/icon/drawable-ldpi-icon.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DeliveryApp/resources/android/icon/drawable-hdpi-icon.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DeliveryApp/resources/android/icon/drawable-xxxhdpi-icon.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DeliveryApp/resources/android/splash/drawable-land-xxxhdpi-screen.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DeliveryApp/resources/ios/icon/icon-40.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DeliveryApp/res/drawable-land-hdpi/screen.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DeliveryApp/www/manifest.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DeliveryApp/res/mipmap-xxxhdpi/icon.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DeliveryApp/scss/ionic.app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DeliveryApp/platforms/platforms.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DeliveryApp/platforms/android/assets/www/img/1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DeliveryApp/platforms/android/assets/www/img/logo.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DeliveryApp/platforms/android/assets/www/img/ionic.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DeliveryApp/platforms/android/res/mipmap-xhdpi/icon.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -3528,31 +3398,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Repositories/OrderRepositoryEloquent.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-633">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DeliveryApp/www/js/controllers/client/checkoutSuccessful.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="46" lean-forward="false" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DeliveryApp/www/js/services/order.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DeliveryApp/www/templates/client/checkout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="15" column="50" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -3577,60 +3426,191 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DeliveryApp/www/js/controllers/client/checkout.js">
+    <entry file="file://$PROJECT_DIR$/DeliveryApp/platforms/android/build/intermediates/assets/debug/www/js/services/cart.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="42" column="16" lean-forward="false" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+        <state relative-caret-position="194">
+          <caret line="45" column="8" lean-forward="false" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DeliveryApp/www/js/controllers/client/menu.js">
+    <entry file="file://$PROJECT_DIR$/DeliveryApp/www/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="8" />
+        <state relative-caret-position="85">
+          <caret line="5" column="46" lean-forward="false" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DeliveryApp/www/js/controllers/client/order.js">
+    <entry file="file://$PROJECT_DIR$/DeliveryApp/www/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="8" />
+        <state relative-caret-position="102">
+          <caret line="6" column="37" lean-forward="false" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DeliveryApp/www/js/controllers/client/viewOrder.js">
+    <entry file="file://$PROJECT_DIR$/DeliveryApp/www/templates/client/checkout_item_detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="8" />
+        <state relative-caret-position="170">
+          <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeliveryApp/www/templates/client/checkout_successful.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="30" lean-forward="false" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DeliveryApp/www/templates/client/menu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="27" column="15" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="46" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DeliveryApp/www/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1972">
-          <caret line="116" column="56" lean-forward="false" selection-start-line="116" selection-start-column="32" selection-end-line="116" selection-end-column="56" />
-          <folding />
+        <state relative-caret-position="379">
+          <caret line="40" column="37" lean-forward="false" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DeliveryApp/www/templates/client/order.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="19" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="27" selection-end-column="11" />
+        <state relative-caret-position="170">
+          <caret line="10" column="38" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DeliveryApp/www/templates/client/view_order.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeliveryApp/www/img/logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeliveryApp/www/templates/client/view_products.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="60" lean-forward="true" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeliveryApp/www/templates/client/checkout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="26" column="42" lean-forward="false" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeliveryApp/www/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="13" column="37" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="24" selection-end-column="11" />
+          <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeliveryApp/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="60" column="40" lean-forward="false" selection-start-line="60" selection-start-column="40" selection-end-line="60" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeliveryApp/www/js/services/userData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Transformers/UserTransformer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="33" column="20" lean-forward="true" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeliveryApp/www/js/controllers/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeliveryApp/www/js/controllers/deliveryman/menu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/UserTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="33" column="36" lean-forward="true" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/auth/register.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-156">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeliveryApp/www/js/controllers/client/menu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeliveryApp/www/js/controllers/client/viewOrder.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeliveryApp/www/js/controllers/client/order.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="16" column="55" lean-forward="true" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeliveryApp/www/js/controllers/client/checkout.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="41" column="18" lean-forward="true" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeliveryApp/www/js/services/order.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeliveryApp/www/templates/deliveryman/menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="22" column="86" lean-forward="false" selection-start-line="22" selection-start-column="86" selection-end-line="22" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeliveryApp/www/templates/deliveryman/order.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeliveryApp/www/js/controllers/deliveryman/order.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="20" column="35" lean-forward="true" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -3638,86 +3618,137 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="37" lean-forward="false" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DeliveryApp/www/templates/deliveryman/order.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="11" lean-forward="false" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DeliveryApp/www/templates/deliveryman/menu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" column="17" lean-forward="false" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DeliveryApp/www/js/controllers/deliveryman/viewOrder.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+        <state relative-caret-position="289">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DeliveryApp/www/js/controllers/deliveryman/order.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="29" lean-forward="false" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DeliveryApp/www/js/controllers/deliveryman/menu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="28" lean-forward="false" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DeliveryApp/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="50" column="63" lean-forward="true" selection-start-line="50" selection-start-column="63" selection-end-line="50" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DeliveryApp/www/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="62" lean-forward="false" selection-start-line="6" selection-start-column="62" selection-end-line="6" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DeliveryApp/platforms/android/build/intermediates/assets/debug/www/js/services/cart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="45" column="8" lean-forward="false" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DeliveryApp/www/templates/client/checkout_item_detail.html">
+    <entry file="file://$PROJECT_DIR$/app/Models/Geo.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
-          <caret line="22" column="58" lean-forward="false" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
+          <caret line="22" column="1" lean-forward="false" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DeliveryApp/www/js/controllers/login.js">
+    <entry file="file://$PROJECT_DIR$/app/Repositories/OrderRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Repositories/OrderRepositoryEloquent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="40" column="27" lean-forward="false" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env.example">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Broadcasting/ShouldBroadcast.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/broadcasting.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2017_01_26_234749_add_hash_to_orders.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="15" column="47" lean-forward="true" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Services/OrderService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="102" column="65" lean-forward="false" selection-start-line="102" selection-start-column="65" selection-end-line="102" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="35" lean-forward="true" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="20" lean-forward="false" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/pusher/pusher-php-server/lib/Pusher.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="36" column="31" lean-forward="false" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Events/GetLocationDeliveryman.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding>
+            <element signature="e#39#69#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/Deliveryman/DeliverymanCheckoutController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="78" column="55" lean-forward="false" selection-start-line="78" selection-start-column="55" selection-end-line="78" selection-end-column="55" />
+          <folding>
+            <element signature="e#65#112#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

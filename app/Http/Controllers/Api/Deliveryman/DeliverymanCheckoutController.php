@@ -2,7 +2,9 @@
 
 namespace CodeDelivery\Http\Controllers\Api\Deliveryman;
 
+use CodeDelivery\Events\GetLocationDeliveryman;
 use CodeDelivery\Http\Controllers\Controller;
+use CodeDelivery\Models\Geo;
 use CodeDelivery\Services\OrderService;
 use CodeDelivery\Repositories\OrderRepository;
 use CodeDelivery\Repositories\UserRepository;
@@ -65,11 +67,17 @@ class DeliverymanCheckoutController extends Controller
     public function updateStatus(Request $request, $id)
     {
         $idDeliveryman = Authorizer::getResourceOwnerId();
-        $order = $this->orderService->updateStatus($id,$idDeliveryman,$request->get('status'));
-        if ($order) {
-            return $this->repository->find($order->id);
-        }
-        abort(400,'Order nao encontrado');
+        return $this->orderService->updateStatus($id,$idDeliveryman,$request->get('status'));
+
+    }
+
+    public function geo(Request $request, Geo $geo, $id){
+        $idDeliveryman = Authorizer::getResourceOwnerId();
+        $order = $this->repository->getByIdAndDeliveryman($id,$idDeliveryman);
+        $geo->lat = $request->get('lat');
+        $geo->long = $request->get('long');
+        event(new GetLocationDeliveryman($geo,$order));
+        return $geo;
     }
 
 

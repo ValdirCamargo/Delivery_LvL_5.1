@@ -1,7 +1,7 @@
 angular.module('starter.controllers')
     .controller('ClientOrderCtrl',[
-        '$scope','$state','$ionicLoading','Order',
-        function ($scope,$state,$ionicLoading,Order)
+        '$scope','$state','$ionicLoading','ClientOrder',
+        function ($scope,$state,$ionicLoading,ClientOrder)
         {
             $scope.items = [];
 
@@ -19,7 +19,7 @@ angular.module('starter.controllers')
             }
 
             function loadOrders() {
-                Order.query({
+                ClientOrder.query({
                     id: null,
                     orderBy:'created_at',
                     sortedBy:'desc'
